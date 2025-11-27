@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bot Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Bot Creator</h1>
+            <p>Buat bot AI kustom Anda sendiri dan bagikan dengan teman!</p>
+        </header>
+
+        <div class="creator-section">
+            <button id="createBotBtn" class="btn-primary">➕ Create AI Bot Anda</button>
+            
+            <div id="botForm" class="form-container hidden">
+                <h2>Buat Bot Baru</h2>
+                
+                <div class="form-group">
+                    <label for="botName">Nama Bot:</label>
+                    <input type="text" id="botName" placeholder="Masukkan nama untuk bot Anda">
+                </div>
+                
+                <div class="form-group">
+                    <label for="botImage">URL Gambar Profil:</label>
+                    <input type="url" id="botImage" placeholder="https://example.com/image.jpg">
+                </div>
+                
+                <div class="form-group">
+                    <label for="persona">Persona/Deskripsi Bot:</label>
+                    <textarea id="persona" rows="6" placeholder="Deskripsikan personality bot Anda. Contoh: 'Kamu adalah asisten AI yang ramah dan helpful...'"></textarea>
+                </div>
+                
+                <button id="submitBot" class="btn-success">🚀 Create Bot</button>
+            </div>
+
+            <div id="botLink" class="link-container hidden">
+                <h3>✅ Bot Berhasil Dibuat!</h3>
+                <p>Bagikan link ini dengan teman-teman Anda:</p>
+                <div class="link-box">
+                    <input type="text" id="shareLink" readonly>
+                    <button id="copyLink" class="btn-copy">📋 Copy</button>
+                </div>
+                <a id="openBot" class="btn-open" target="_blank">💬 Buka Chat Bot</a>
+            </div>
+        </div>
+
+        <div class="bots-list">
+            <h2>🤖 Bot yang Telah Dibuat</h2>
+            <div id="botsContainer" class="bots-grid">
+                <!-- Daftar bot akan muncul di sini -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
