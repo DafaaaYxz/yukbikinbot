@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyB_6PFbktl04BHmkUOCODJxXm4ubKy3fww';
+const API_KEY = 'AIzaSyB_YbCH0jzmzDx0BqGlTOn4NjyQdUWZZpI';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?key=${API_KEY}&alt=sse`;
 
 class BotCreator {
